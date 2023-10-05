@@ -1,0 +1,10 @@
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\bin\Debug\interseccion_rectas.exe.config
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\bin\Debug\interseccion_rectas.exe
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\bin\Debug\interseccion_rectas.pdb
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\obj\Debug\interseccion_rectas.csproj.AssemblyReference.cache
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\obj\Debug\interseccion_rectas.Form1.resources
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\obj\Debug\interseccion_rectas.Properties.Resources.resources
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\obj\Debug\interseccion_rectas.csproj.GenerateResource.cache
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\obj\Debug\interseccion_rectas.csproj.CoreCompileInputs.cache
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\obj\Debug\interseccion_rectas.exe
+C:\Users\dcrio\source\repos\interseccion_rectas\interseccion_rectas\obj\Debug\interseccion_rectas.pdb
