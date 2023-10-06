@@ -1,6 +1,6 @@
 ﻿namespace interseccion_rectas
 {
-    partial class Form1
+    partial class interfas
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Label pendiente_intercepto;
+            System.Windows.Forms.Label punto_pendiente;
             this.lbl_ec1 = new System.Windows.Forms.Label();
             this.lbl_ec2 = new System.Windows.Forms.Label();
             this.ec_1 = new System.Windows.Forms.TextBox();
             this.ec_2 = new System.Windows.Forms.TextBox();
-            this.btn_calcular_f1 = new System.Windows.Forms.Button();
+            this.Btn_calcular_f1 = new System.Windows.Forms.Button();
             this.lbl_respuesta = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.btn_calcular_f2 = new System.Windows.Forms.Button();
             this.ecu_2 = new System.Windows.Forms.TextBox();
             this.ecu_1 = new System.Windows.Forms.TextBox();
             this.lbl_ecu2 = new System.Windows.Forms.Label();
             this.lbl_ecu1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            pendiente_intercepto = new System.Windows.Forms.Label();
+            punto_pendiente = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_ec1
@@ -75,36 +78,37 @@
             this.ec_2.Size = new System.Drawing.Size(165, 20);
             this.ec_2.TabIndex = 3;
             // 
-            // btn_calcular_f1
+            // Btn_calcular_f1
             // 
-            this.btn_calcular_f1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_calcular_f1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_calcular_f1.Location = new System.Drawing.Point(101, 182);
-            this.btn_calcular_f1.Name = "btn_calcular_f1";
-            this.btn_calcular_f1.Size = new System.Drawing.Size(156, 54);
-            this.btn_calcular_f1.TabIndex = 4;
-            this.btn_calcular_f1.Text = "Calcular";
-            this.btn_calcular_f1.UseVisualStyleBackColor = false;
+            this.Btn_calcular_f1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Btn_calcular_f1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Btn_calcular_f1.Location = new System.Drawing.Point(101, 182);
+            this.Btn_calcular_f1.Name = "Btn_calcular_f1";
+            this.Btn_calcular_f1.Size = new System.Drawing.Size(156, 54);
+            this.Btn_calcular_f1.TabIndex = 4;
+            this.Btn_calcular_f1.Text = "Calcular";
+            this.Btn_calcular_f1.UseVisualStyleBackColor = false;
+            this.Btn_calcular_f1.Click += new System.EventHandler(this.Btn_calcular_f1_Click);
             // 
             // lbl_respuesta
             // 
             this.lbl_respuesta.AutoSize = true;
             this.lbl_respuesta.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_respuesta.ForeColor = System.Drawing.Color.Black;
-            this.lbl_respuesta.Location = new System.Drawing.Point(302, 364);
+            this.lbl_respuesta.Location = new System.Drawing.Point(97, 308);
             this.lbl_respuesta.Name = "lbl_respuesta";
-            this.lbl_respuesta.Size = new System.Drawing.Size(187, 21);
+            this.lbl_respuesta.Size = new System.Drawing.Size(0, 21);
             this.lbl_respuesta.TabIndex = 5;
-            this.lbl_respuesta.Text = "aca va la respusta ";
             // 
-            // label1
+            // pendiente_intercepto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "ingresa la priemra ecuacion";
+            pendiente_intercepto.AutoSize = true;
+            pendiente_intercepto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            pendiente_intercepto.Location = new System.Drawing.Point(4, 47);
+            pendiente_intercepto.Name = "pendiente_intercepto";
+            pendiente_intercepto.Size = new System.Drawing.Size(325, 60);
+            pendiente_intercepto.TabIndex = 6;
+            pendiente_intercepto.Text = "en este campo solo ingresa ecuaciones\r\n               de la forma y=x+b\r\n\r\n";
             // 
             // btn_calcular_f2
             // 
@@ -116,6 +120,7 @@
             this.btn_calcular_f2.TabIndex = 7;
             this.btn_calcular_f2.Text = "Calcular";
             this.btn_calcular_f2.UseVisualStyleBackColor = false;
+            this.btn_calcular_f2.Click += new System.EventHandler(this.btn_calcular_f2_Click);
             // 
             // ecu_2
             // 
@@ -149,35 +154,50 @@
             this.lbl_ecu1.TabIndex = 8;
             this.lbl_ecu1.Text = "ingresa la priemra ecuacion";
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(557, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "ingresa la priemra ecuacion";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(182, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(454, 24);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "PUNTO DE INTERSECCION ENTRE 2 RECTAS";
             // 
-            // Form1
+            // punto_pendiente
+            // 
+            punto_pendiente.AutoSize = true;
+            punto_pendiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            punto_pendiente.Location = new System.Drawing.Point(414, 44);
+            punto_pendiente.Name = "punto_pendiente";
+            punto_pendiente.Size = new System.Drawing.Size(325, 60);
+            punto_pendiente.TabIndex = 14;
+            punto_pendiente.Text = "en este campo solo ingresa ecuaciones\r\n               de la forma y-y1=m(x-x1)\r\n\r" +
+    "\n";
+            // 
+            // interfas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(punto_pendiente);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.ecu_2);
             this.Controls.Add(this.ecu_1);
             this.Controls.Add(this.lbl_ecu2);
             this.Controls.Add(this.lbl_ecu1);
             this.Controls.Add(this.btn_calcular_f2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(pendiente_intercepto);
             this.Controls.Add(this.lbl_respuesta);
-            this.Controls.Add(this.btn_calcular_f1);
+            this.Controls.Add(this.Btn_calcular_f1);
             this.Controls.Add(this.ec_2);
             this.Controls.Add(this.ec_1);
             this.Controls.Add(this.lbl_ec2);
             this.Controls.Add(this.lbl_ec1);
-            this.Name = "Form1";
-            this.Text = "interseccion";
+            this.Name = "interfas";
+            this.Text = "interseccion entre 2 rectas";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,15 +209,14 @@
         private System.Windows.Forms.Label lbl_ec2;
         private System.Windows.Forms.TextBox ec_1;
         private System.Windows.Forms.TextBox ec_2;
-        private System.Windows.Forms.Button btn_calcular_f1;
+        private System.Windows.Forms.Button Btn_calcular_f1;
         private System.Windows.Forms.Label lbl_respuesta;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_calcular_f2;
         private System.Windows.Forms.TextBox ecu_2;
         private System.Windows.Forms.TextBox ecu_1;
         private System.Windows.Forms.Label lbl_ecu2;
         private System.Windows.Forms.Label lbl_ecu1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
     }
 }
 
